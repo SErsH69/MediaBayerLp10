@@ -1,0 +1,78 @@
+.main_why {
+    padding-top: vw(190);
+    @media all and (max-width: 1023px) {
+        padding-top: 340px;
+    }
+    &__title {
+        margin-bottom: vw(32);
+        color: var(--Black, #313132);
+        font-family: "Unbounded", sans-serif;
+        font-size: vw(32);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+        }
+    }
+    &__block {
+        width: 33.3%;
+        padding: vw(32);
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            padding: 0 17px;
+            text-align: center;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: vw(32);
+        border-radius: 12px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 24px 45px 0px rgba(40, 43, 57, 0.14);
+        font-size: 0;
+        width: vw(72);
+        height: vw(72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 24px;
+            width: 72px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 72px;
+        }
+        img {
+            width: vw(48);
+            height: vw(48);
+            @media all and (max-width: 1023px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+    &__text {
+        color: var(--Black, #313132);
+        font-family: "Unbounded", sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,219 @@
+.main_form {
+    max-width: vw(597);
+    width: 100%;
+    border-radius: vw(24);
+    background: #FFF;
+    box-shadow: 0px 45px 45px 0px rgba(40, 43, 57, 0.20);
+    padding: vw(32);
+    position: relative;
+    bottom: vw(-88);
+    @media all and (max-width: 1023px) {
+        max-width: 100%;
+        padding: 24px 16px;
+        border-radius: 16px;
+        bottom: -289px;
+        margin-top: -289px;
+    }
+    &__blocks {
+        position: relative;
+    }
+    &__slides {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &__slide {
+        &:not(:last-child) {
+            margin-bottom: vw(24);
+            @media all and (max-width: 1023px) {
+                margin-bottom: 24px;
+            }
+        }
+        border-radius: vw(8);
+        background: var(--white, #FFF);
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            padding: 0px;
+            width: 100%;
+            margin-left: 0;
+            border-radius: 8px;
+            margin-right: 0;
+        }
+    }
+    &__number {
+        color: var(--Black, #292D33);
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        font-family: "Unbounded", sans-serif;
+        padding: vw(15);
+        margin-bottom: vw(-12);
+        border-radius: 8px 8px 0px 0px;
+        border-top: 1px solid var(--Secondary, #E4E9F1);
+        border-right: 1px solid var(--Secondary, #E4E9F1);
+        border-left: 1px solid var(--Secondary, #E4E9F1);
+        @media all and (max-width: 1023px) {
+            padding: 16px;
+            font-size: 16px;
+            margin-bottom: -12px;
+        }
+    }
+    .noUi-target {
+        box-shadow: none;
+        border: 0;
+        height: vw(26);
+        overflow: hidden;
+        background: none;
+        border-radius: 0px;
+        padding-top: vw(12);
+        * {
+            transition: unset;
+        }
+        @media all and (max-width: 1023px) {
+            padding-top: 12px;
+            height: 26px;
+        }
+        .noUi-base {
+            .noUi-connects {
+                height: 4px;
+                border-radius: 20px;
+                background: var(--light-grey-line, #E1E1E1);
+            }
+        }
+        .noUi-origin {
+            height: 8px;
+            border-radius: 20px;
+            background: var(--green, #CFF43F);
+            .noUi-handle {
+                width: vw(24);
+                height: vw(24);
+                border: vw(4) solid #CFF43F;
+                border-radius: 20px;
+                box-shadow: none;
+                top: vw(-10);
+                right: vw(-12);
+                cursor: pointer;
+                @media all and (max-width: 1023px) {
+                    width: 24px;
+                    height: 24px;
+                    top: -10px;
+                    border: 2px solid #CFF43F;
+                    right: -12px;
+                }
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__values {
+        display: flex;
+        justify-content: space-between;
+        padding-top: vw(6);
+        @media all and (max-width: 1023px) {
+            padding-top: 10px;
+        }
+    }
+    &__value {
+        color: var(--Darck-grey, #666);
+        font-family: 'Gilroy', sans-serif, cursive;
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+    &__btn {
+        margin-top: vw(24);
+        color: var(--white, #fff);
+        font-family: "Unbounded", sans-serif;
+        font-size: vw(14);
+        text-align: center;
+        font-style: normal;
+        cursor: pointer;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 5px;
+        background: var(--Red, #0C091D);
+        border-radius: 12px;
+        box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.05);
+        padding: vw(18);
+        max-width: vw(357);
+        width: 100%;
+        border: 1px solid var(--Red, #0C091D);
+        position: relative;
+        z-index: 2;
+        &:hover {
+            background: var(--Green-2, #CFF43F);
+            color: var(--Black, #313132);
+            border-color: var(--Red, #CFF43F);
+        }
+        &:active {
+            background: #A7CC17;
+            border-color: #A7CC17;
+            color: var(--Black, #313132);
+        }
+        @media all and (max-width: 1023px) {
+            margin-top: 32px;
+            font-size: 16px;
+            padding: 19px;
+            max-width: 100%;
+        }
+    }
+    &__span {
+        & > span {
+            color: var(--Darck-grey, #666);
+            font-family: 'Gilroy', sans-serif, cursive;
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%;
+            display: inline-block;
+            margin-bottom: vw(16);
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__lists {
+        margin-top: vw(24);
+        display: flex;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            margin-top: 24px;
+        }
+    }
+    &__list {
+        width: calc(50% - vw(20));
+        @media all and (max-width: 1023px) {
+            width: calc(50% - 15px);
+        }
+        span {
+            color: var(--Gray, #666);
+            font-family: "Unbounded", sans-serif;
+            font-size: vw(12);
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%;
+            @media all and (max-width: 1023px) {
+                font-size: 12px;
+            }
+        }
+        &--text {
+            color: var(--Gray, #313132);
+            font-family: "Unbounded", sans-serif;
+            font-size: vw(12);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            @media all and (max-width: 1023px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
